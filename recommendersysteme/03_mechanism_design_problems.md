@@ -353,7 +353,7 @@ A:
 
   **Feedbackeffekte:**
 
-* $$n$$ -te Bewertungen beeinflussen Einschätzung des Produktes weniger als die erste Bewertung.
+* n-te Bewertungen beeinflussen Einschätzung des Produktes weniger als die erste Bewertung.
 * Amazon Produktseite.
   * Produkt war anfangs zufriedenstellend &rightarrow; Gute Bewertungen
   * Benutzer kaufen Produkt aufgrund guter Kommentare

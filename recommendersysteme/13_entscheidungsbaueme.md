@@ -103,27 +103,27 @@ A: Entropie nach Shannon im Information Gain.
 
 A:
 
-$$H = - \sum_{i = 1}^{n}{}p_{i}\log_{2}p_{i}$$
+$H = - \sum_{i = 1}^{n}{}p_{i}\log_{2}p_{i}$
 
-$$\Delta H\ = \ H\left( y \right) - H\left( y\mid x \right)$$
+$\Delta H\ = \ H\left( y \right) - H\left( y\mid x \right)$
 
-Mit $$H\(y \mid x\) = - \sum_{i,j}^{}\mspace{2mu} p\(i,j\)\log_{2}p\(y = j \mid x = i\)$$
+Mit $H(y \mid x) = - \sum_{i,j}^{} p(i,j)\log_{2}p(y = j \mid x = i)$
 
 5. Das wichtigste Kriterium sei das Aussehen der Blätter. Ihre Experten geben 8 Merkmalsausprägungen an. Wie groß kann M in diesem Fall minimal bzw. maximal werden? \(3+3P\)
 
 A:
 
-**Minimal:** Gilt $$p_{i} = \, 1$$ und alle anderen $$p_{j} = 0$$, mit $$j = 1,\ldots,i - 1,i + 1,\, 8$$ gilt; \(Bei Sicherheit über Ergebnis verschwindet Entropie\), dann ist $$H\, = \, 0$$.
+**Minimal:** Gilt $p_{i} = \, 1$ und alle anderen $p_{j} = 0$, mit $j = 1,\ldots,i - 1,i + 1,\, 8$ gilt; \(Bei Sicherheit über Ergebnis verschwindet Entropie\), dann ist $H\, = \, 0$.
 
-**Maximal:** Liegt Gleichverteilung vor, d. h. $$p\_{i} = \frac{1}{8}$$. Dann gilt:
+**Maximal:** Liegt Gleichverteilung vor, d. h. $p\_{i} = \frac{1}{8}$. Dann gilt:
 
-$$H = - \log\_{2}\left\( \frac{1}{8} \right\) = 3$$ \(Vgl. Folie 38\)
+$H = - \log\_{2}( \frac{1}{8} ) = 3$ \(Vgl. Folie 38\)
 
 6. Was bedeutet ein minimaler bzw. maximaler Wert? \(3+3P\)
 
-Ein **minimaler Wert** \(d. h. $$0$$\) bedeutet, dass ein Attribut perfekt die Output-Variable erklärt und **keine** Unsicherheit mehr besteht. Man hat homogene Klassen nach Split vorliegen.
+Ein **minimaler Wert** \(d. h. $0$\) bedeutet, dass ein Attribut perfekt die Output-Variable erklärt und **keine** Unsicherheit mehr besteht. Man hat homogene Klassen nach Split vorliegen.
 
-Ein **maximaler Wert** \(d. h. $$3$$\) bedeutet, dass eine hohe Unsicherheit besteht. Nach Split sind Klassen sehr heterogen. Der durchschnittliche Informationsgewinn ist gering. \(vgl. Tutorium 6 with solutions: Slide 13+14\)
+Ein **maximaler Wert** \(d. h. $3$\) bedeutet, dass eine hohe Unsicherheit besteht. Nach Split sind Klassen sehr heterogen. Der durchschnittliche Informationsgewinn ist gering. \(vgl. Tutorium 6 with solutions: Slide 13+14\)
 
 1. Stellen Sie einen Entscheidungsbaum zum Kauf eines Computers graphisch dar \(6P.\):
 
@@ -208,10 +208,10 @@ A:
 
 **Entropie:**
 
-$$
+$
 H_{o}\left(\frac{3}{6} ; \frac{3}{6}\right)= 
 -\frac{1}{2} \log _{2} \frac{1}{2}-\frac{1}{2} \log _{2} \frac{1}{2} \approx 1
-$$
+$
 
 4. F: *Erklären Sie: Was ist in obigem Beispiel der Informationsgewinn des Attributes "Outlook"? \(Nicht berechnen, nur erklären!\)* \(5P.\)
 
@@ -223,15 +223,15 @@ Zusatz:
 
 A:
 
-**Minimal:** Gilt $$p_{i} = \, 1$$ und alle anderen $$p_{j} = 0$$, mit $$j = 1,\ldots,i - 1,i + 1,\, n$$ gilt; \(Bei Sicherheit über Ergebnis verschwindet Entropie\), dann ist $$H\, = \, 0$$.
+**Minimal:** Gilt $p_{i} = \, 1$ und alle anderen $p_{j} = 0$, mit $j = 1,\ldots,i - 1,i + 1,\, n$ gilt; \(Bei Sicherheit über Ergebnis verschwindet Entropie\), dann ist $H\, = \, 0$.
 
 **Maximal**:
 
 Entropie ist nach oben nicht beschränkt. Es gilt:
 
-$$
-H\left( S \right) = - \sum_{j}^{}{}\mspace{2mu} p_{j}*\log_{2}p_{j} = - \sum_{i = 1}^{n}{}\mspace{2mu}\frac{1}{n}*\log_{2}\frac{1}{n} = - n*\left( \frac{1}{n}*\left( \log_{2}1 - \log_{2}n \right) \right) =- 1*\left( 0 - \log_{2}n \right) = \log_{2}n \rightarrow \infty\left( n \rightarrow \infty \right)
-$$
+$
+H\left( S \right) = - \sum_{j}^{} p_{j}*\log_{2}p_{j} = - \sum_{i = 1}^{n}\frac{1}{n}*\log_{2}\frac{1}{n} = - n*\left( \frac{1}{n}*\left( \log_{2}1 - \log_{2}n \right) \right) =- 1*\left( 0 - \log_{2}n \right) = \log_{2}n \rightarrow \infty\left( n \rightarrow \infty \right)
+$
 
 Entropie wird **maximal** bei Gleichverteilung.
 
@@ -296,15 +296,15 @@ A: Siehe oberhalb.
 
 A:
 
-**Minimal:** Gilt $$p_{i} = \, 1$$ und alle anderen $$p_{j} = 0$$, mit $$j = 1,\cdots,i - 1,i + 1,\cdots, 32$$ gilt;
+**Minimal:** Gilt $p_{i} = \, 1$ und alle anderen $p_{j} = 0$, mit $j = 1,\cdots,i - 1,i + 1,\cdots, 32$ gilt;
 
-Bei Sicherheit über Ergebnis verschwindet Entropie, dann ist $$H = 0$$.
+Bei Sicherheit über Ergebnis verschwindet Entropie, dann ist $H = 0$.
 
-**Maximal:** Liegt Gleichverteilung vor, d. h. $$p_{i} = \frac{1}{32}$$. Dann gilt:
+**Maximal:** Liegt Gleichverteilung vor, d. h. $p_{i} = \frac{1}{32}$. Dann gilt:
 
-$$
-H = - \log_{2}\left\( \frac{1}{32} \right\) = 5
-$$ 
+$
+H = - \log_{2}( \frac{1}{32} ) = 5
+$ 
 
 \(Vgl. Folie 38\)
 
@@ -312,9 +312,9 @@ $$
 
 A:
 
-Ein **maximaler Wert** \(d. h. $$0$$\) bedeutet, dass ein Attribut perfekt die Output-Variable erklärt und **keine** Unsicherheit mehr besteht. Man hat homogene Klassen nach Split vorliegen.
+Ein **maximaler Wert** \(d. h. $0$\) bedeutet, dass ein Attribut perfekt die Output-Variable erklärt und **keine** Unsicherheit mehr besteht. Man hat homogene Klassen nach Split vorliegen.
 
-Ein **minimaler Wert** \(d. h. $$5$$\) bedeutet, dass eine hohe Unsicherheit besteht. Nach Split sind Klassen sehr heterogen. Der durchschnittliche ist Informationsgewinn gering.
+Ein **minimaler Wert** \(d. h. $5$\) bedeutet, dass eine hohe Unsicherheit besteht. Nach Split sind Klassen sehr heterogen. Der durchschnittliche ist Informationsgewinn gering.
 
 *Das neue Szenelokal in Karlsruhe hat momentan zwei Tagesmenüs im Einsatz. Um Kosten zu sparen möchte das Restaurant auf ein Tagesmenü pro Tag wechseln. Der Chefkoch hat das Gefühl das die Kunden wetterabhängig, das eine oder das andere Tagesmenü wählen.*
 
@@ -337,13 +337,13 @@ A:
 
 **Informationsgewinn:**
 
-A: $$H_{0} (5/8, 3/8) = 0.95$$
+A: $H_{0} (5/8, 3/8) = 0.95$
 
-$$H\_{\text{Wetter=sonnig} = \(4/6; 2/6\) = 0.92$$
+$H_{\text{Wetter=sonnig}} = (4/6; 2/6) = 0.92$
 
-$$H_{\text{Wetter=bewölkt} = \(1/2; 1/2\) = 1$$
+$H_{\text{Wetter=bewölkt}} = (1/2; 1/2) = 1$
 
-$$\text{Durchschnittlicher Inf. G. Wetter} =(0.95-0.92) \times (6/8) + (0.95 - 1) \times (2/8) = 0.01$$
+$\text{Durchschnittlicher Inf. G. Wetter} =(0.95-0.92) \times (6/8) + (0.95 - 1) \times (2/8) = 0.01$
 
 4. Halten Sie aus diesem Grund das Wetter für ein aussagekräftiges Output Attribut. Begründen Sie in 3 Sätzen. \(2P.\)
 
@@ -416,13 +416,13 @@ A:
 
 **Informationsgewinn:**
 
-A: $$H\_0 (5/8, 3/8) = 0.95$$
+A: $H\_0 (5/8, 3/8) = 0.95$
 
-H\_Temperatur=\&lt;20° $$(5/5; 0/5) = 0$$
+H\_Temperatur=\&lt;20° $(5/5; 0/5) = 0$
 
-H\_Temperatur= größer 20° $$(0/3; 3/3) = 0$$
+H\_Temperatur= größer 20° $(0/3; 3/3) = 0$
 
-Durchschnittlicher Inf. G. Temperatur = $$(0.95-0) \times (5/8) + (0.95 - 0) \times (3/8) = 0.95$$
+Durchschnittlicher Inf. G. Temperatur = $(0.95-0) \times (5/8) + (0.95 - 0) \times (3/8) = 0.95$
 
 Bei der Entwicklung eines neuen Sensors zur Früherkennung von Stoffwechselstörungen wurde die Existenz von drei Enzymen \(A, B, und C\) im Blut gemessen:
 
@@ -438,33 +438,33 @@ A:
 
 A: 
 
-$$H_0 (90/100, 10/100) = 0.47$$
+$H_0 (90/100, 10/100) = 0.47$
 
-$$H_A=1(85/85; 0/85) = 0$$
+$H_A=1(85/85; 0/85) = 0$
 
-$$H_A=0(5/15; 10/15) = 0.92$$
+$H_A=0(5/15; 10/15) = 0.92$
 
-Durchschnittlicher Inf. G. A = $$\(0.47-0\) \times \(85/100\) + \(0.47 - 0.92\) \times \(15/100\) = 0.33$$
+Durchschnittlicher Inf. G. A = $(0.47-0) \times (85/100) + (0.47 - 0.9) \times (15/100) = 0.33$
 
 B: 
-$$H_0 (90/100, 10/100) = 0.47$$
+$H_0 (90/100, 10/100) = 0.47$
 
-$$H_B=1(80/80; 0/80) = 0$$
+$H_B=1(80/80; 0/80) = 0$
 
-$$H_B=0(10/20; 10/20) = 1$$
+$H_B=0(10/20; 10/20) = 1$
 
-Durchschnittlicher Inf. G. B = $$(0.47-0) \times (80/100) + \(0.47 - 1) \times (20/100) = 0.27$$
+Durchschnittlicher Inf. G. B = $(0.47-0) \times (80/100) + (0.47 - 1) \times (20/100) = 0.27$
 
 C: 
 
-$$H_0 (90/100, 10/100) = 0.47$$
+$H_0 (90/100, 10/100) = 0.47$
 
-$$H_C =1(50/50; 0/50) = 0$$
+$H_C =1(50/50; 0/50) = 0$
 
-$$H_C=0(40/50; 10/50) = 0.72$$
+$H_C=0(40/50; 10/50) = 0.72$
 
 Durchschnittlicher Inf. G. C = 
-$$(0.47-0) \times (50/100) + (0.47- 0.72) \times (50/100) = 0.11$$
+$(0.47-0) \times (50/100) + (0.47- 0.72) \times (50/100) = 0.11$
 
 **Ergebnis:** Enzym A sollte gewählt werden, weil höchster Informationsgehalt.
 
@@ -474,7 +474,7 @@ Siehe oberhalb.
 
 **Formel Informationsgewinn**
 
-$$\Delta H\ = \ H(y) - H(y \mid x)$$
+$\Delta H\ = \ H(y) - H(y \mid x)$
 
 2. F. *Welches der Attribute sollte als erstes für den Aufbau eines Entscheidungsbaums verwendet werden?* \(4P\)
 

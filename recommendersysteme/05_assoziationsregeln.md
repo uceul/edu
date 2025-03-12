@@ -138,7 +138,7 @@ Support\(X\) : Wie oft eine Menge von Items zusammen vorkommen.
 
 Confidence\(X,Y\): Wie oft Itemmengen X und Y zusammen vorkommen, wenn X vorkommt.
 
-Begründen oder beweisen Sie \(6P.\): $\text{support}\(X\) \leq s \Rightarrow \text{support}\(X \cup Y\) \leq \text{support}\(X\) \leq s$
+Begründen oder beweisen Sie \(6P.\): $\text{support}(X) \leq s \Rightarrow \text{support}(X \cup Y) \leq \text{support}(X) \leq s$
 
 A:
 
@@ -164,9 +164,9 @@ Geben Sie allgemein die Formel für den Support einer Menge X von Produkten an. 
 
 A:
 
-$$
+$
 \operatorname{support}(X)=\frac{|\{t \in T \mid X \subseteq t\}|}{|T|}
-$$
+$
 
 Geben Sie folgende Supports an: sup\({P1}\), sup\({P1, P2}\), sup\({P1, P3}\), sup\({P1, P2, P3}\). \(4P.\)
 
@@ -230,9 +230,9 @@ Geben Sie allgemein die Formel für Confidence an. Erklären Sie kurz die Bestan
 
 A:
 
-$$
+$
 \operatorname{confidence}(X, Y)=\frac{\operatorname{support}(X \cup Y)}{\operatorname{support}(X)}
-$$
+$
 
 Die Confidence sagt aus, wie oft die Itemmenge X und Y zusammengekauft werden \(Zähler\), wenn X gekauft wurden \(Nenner\)
 
@@ -364,13 +364,13 @@ Menge I = Kühlschrank, Eiswürfelbehälter, Weinregal, Kühlschrankthermometer 
 
 Eine Reihe T ={ {Kühlschrank, Weinregal, Kühlschrankthermometer}, {Kühlschrank Eiswürfelbehälter} .....} von Transaktionen
 
-$$
+$
 \text { support }(X)=\frac{|\{t \in T \mid X \subseteq t\}|}{|T|}
-$$
+$
 
-$$
+$
 \operatorname{confidence}(X, Y)=\frac{\operatorname{support}(X \cup Y)}{\operatorname{support}(X)}
-$$
+$
 
 Support\(Kühlschrank\): Wie oft wurde Kühlschrank gekauft.
 

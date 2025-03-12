@@ -61,11 +61,11 @@ Geg:
 
 Ges: **Payoff von A bei sofortigem Konsum**
 
-$$\rho\ = \ p*g\ + \ (1 - p)*(1 - b)$$
+$\rho\ = \ p*g\ + \ (1 - p)*(1 - b)$
 
-$$\rho\ = \ 0,8*0,95\ + \ (1 - 0,8)*(1 - 0,9) = \ 0,78$$
+$\rho\ = \ 0,8*0,95\ + \ (1 - 0,8)*(1 - 0,9) = \ 0,78$
 
-$$Payoff(A) = \ 10*0,78\ + \ ( - 2)*(1 - 0,78)\ = \ 7,36\ \$$
+$Payoff(A) = \ 10*0,78\ + \ ( - 2)*(1 - 0,78)\ = \ 7,36\ \$
 
 • Wie hoch ist die Wahrscheinlichkeit, dass ein Buch gut ist, wenn das Buch bereits einmal gut bewertet wurde? \(6 Punkte\)
 
@@ -79,13 +79,13 @@ A:
 
 **Ges:** A priori für Produkt ist gut, wenn es bereits einmal gut bewertet wurde.
 
-$$p_{2}^{+} = \left( gp_{1} \right)/\rho_{1} = \left( \frac{95}{100}\frac{8}{10} \right)/\frac{78}{100} = \frac{38}{39}$$
+$p_{2}^{+} = \left( gp_{1} \right)/\rho_{1} = \left( \frac{95}{100}\frac{8}{10} \right)/\frac{78}{100} = \frac{38}{39}$
 
 • Wie hoch ist der erwartete Payoff von Teilnehmer A, wenn er mit dem Lesen wartet, bis das Buch einmal gut bewertet worden ist? \(6 Punkte\)
 
 A:
 
-$$\mathrm{\text{\ Payoff\ }}_{A} = \sum_{A\mathrm{\text{\ konsumiert\ in\ }}i}^{}\mspace{2mu} f_{i}\left( \rho_{i}\text{Pa}y_{A}^{+} + \left( 1 - \rho_{i} \right)\mathrm{\text{\ Pay\ }}_{A}^{-} \right).$$
+$\mathrm{\text{\ Payoff\ }}_{A} = \sum_{A\mathrm{\text{\ konsumiert\ in\ }}i}^{} f_{i}\left( \rho_{i}\text{Pa}y_{A}^{+} + \left( 1 - \rho_{i} \right)\mathrm{\text{\ Pay\ }}_{A}^{-} \right).$
 
 **Payoff sofortiger Konsum:**
 
@@ -93,21 +93,20 @@ $$\mathrm{\text{\ Payoff\ }}_{A} = \sum_{A\mathrm{\text{\ konsumiert\ in\ }}i}^{
 
 **Payoff, wenn Produkt einmal gut bewertet wurde:**
 
-* $f\_{2}:1 \* 0,78 = 0,78$
+* $f\_{2}:1 * 0,78 = 0,78$
 
-$$p_{2}^{+} = \frac{38}{39}$$
+$p_{2}^{+} = \frac{38}{39}$
 
-$$\rho_{2}^{+} = p_{2}^{+}g + \left( 1 - p_{2}^{+} \right)(1 - b) = \frac{38}{39}\frac{95}{100} + \left( 1 - \frac{38}{39} \right)\left( 1 - \frac{90}{100} \right) = \frac{181}{195}$$
+$\rho_{2}^{+} = p_{2}^{+}g + \left( 1 - p_{2}^{+} \right)(1 - b) = \frac{38}{39}\frac{95}{100} + \left( 1 - \frac{38}{39} \right)\left( 1 - \frac{90}{100} \right) = \frac{181}{195}$
 
-$\mathrm{\text{ Payoff }}\_{A} = \frac{78}{100}\left\( \frac{181}{195}10 + \frac{14}{195}\*\( - 2\) \right\) =  7.13 $
-
+$\mathrm{\text{ Payoff }}_{A} = \frac{78}{100}\left( \frac{181}{195} \cdot 10 + \frac{14}{195} \cdot (-2) \right) = 7.13$
 • Wie hoch ist der Gewinn für Teilnehmer A, wenn er mit dem Lesen wartet, bis das Buch einmal gut bewertet worden ist? \(1 Punkt\)
 
 A:
 
 Da Payoff „Warten" kleiner dem Payoff bei sofortigem Konsum ist, gilt für Gewinn:
 
-$$7,13\ –\ 7,36\ = \ - 0,23$$
+$7,13\ –\ 7,36\ = \ - 0,23$
 
 • Wie wird das Marktgleichgewicht im 2-Runden Batchspiel ermittelt? \(6 Punkte\)
 

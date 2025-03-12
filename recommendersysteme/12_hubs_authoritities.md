@@ -2,7 +2,7 @@
 
 **12 Authority and Hub Algorithmen**
 
-F: _Beschreiben Sie den Algorithmus zur Erstellung eines Teilgraphen des World-Wide Webs auf Basis der besten_ $$t$$ _Ergebnisse einer Suchmaschine im Pseudo-Code. \(Nur oberste Ebene. Kein Pseudocode von Funktionen bzw. Prozeduren!\)_
+F: _Beschreiben Sie den Algorithmus zur Erstellung eines Teilgraphen des World-Wide Webs auf Basis der besten_ $t$ _Ergebnisse einer Suchmaschine im Pseudo-Code. \(Nur oberste Ebene. Kein Pseudocode von Funktionen bzw. Prozeduren!\)_
 
 A:
 
@@ -42,13 +42,13 @@ Es bestehen 3 Probleme, die durch Filtern der Teilgraphen gelöst werden sollen:
 Folgende Heuristiken lösen oben genannte Probleme. \(Jeweils gehört Heuristik 1 zu Problem 1 usw.\)
 
 * **Heuristik zur Elimination von Navigationslinks:**
-  * $$G\left[S_{\nu}\right]$$ Teilgraph der Seiten in $$S_{\nu}$$.
+  * $G\left[S_{\nu}\right]$ Teilgraph der Seiten in $S_{\nu}$.
   * **Man unterscheidet:**
     * Links zwischen Seiten aus verschiedenen Domänen
     * Links zwischen Seiten einer Domäne
   * Wir löschen alle Links zwischen Seiten in einer Domäne.
-* **Heuristik, um Werbung zu filtern \(eliminieren\):** Höchstens $$m$$ Seiten \(z. B. 4-8\) aus einer Domäne dürfen auf $$p$$ zeigen.
-* **Heuristik, um populäre Seite zu filtern:** Der In-Degree von $$p$$ ist die Anzahl der Links, die auf $$p$$ zeigen. Populäre Seiten haben hohen In-Degree und geringe Authority. Wir entfernen alle Seiten, die diese Eigenschaften erfüllen. \(Geyer-Schulz 2020 S. 32\)
+* **Heuristik, um Werbung zu filtern \(eliminieren\):** Höchstens $m$ Seiten \(z. B. 4-8\) aus einer Domäne dürfen auf $p$ zeigen.
+* **Heuristik, um populäre Seite zu filtern:** Der In-Degree von $p$ ist die Anzahl der Links, die auf $p$ zeigen. Populäre Seiten haben hohen In-Degree und geringe Authority. Wir entfernen alle Seiten, die diese Eigenschaften erfüllen. \(Geyer-Schulz 2020 S. 32\)
 
 F: _Erklären Sie die Linkstruktur von populären Seiten, von Hubs and Authorities!_
 
@@ -76,15 +76,15 @@ Siehe Geyer-Schulz \(2020 S. 35\):
 
 **Authority:**
 
-$$
+$
 x_{p} \leftarrow \sum_{q:(q, p) \in E} y_{q}
-$$
+$
 
 **Hub:**
 
-$$
+$
 y_{p} \leftarrow \sum_{q:(p, q) \in E} x_{q}
-$$
+$
 
 ## Quellen:
 

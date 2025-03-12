@@ -61,7 +61,7 @@ Rater: $k,\, l\, \in 1,\ldots.m$ \[Spalten\]
 
 Item: $p\, \in 1,\ldots.,n$ \[Zeilen\]
 
-Rating Matrix: $n\, \times m$ Matrix, Matrixeintrag $p\left\( i,j \right\)$ enthält Bewertung von Rater $i$ über Item $j$.
+Rating Matrix: $n\, \times m$ Matrix, Matrixeintrag $p(i,j)$ enthält Bewertung von Rater $i$ über Item $j$.
 
 Nennen Sie ein Praxisbeispiel eines CF-Recommenders und erklären Sie in 3-4 Sätzen. \(5P.\)
 
@@ -121,9 +121,9 @@ A:
 
 ![](../.gitbook/assets/grafik%20%2831%29.png)
 
-$$
+$
 x_{p, k}=\bar{x}_{k}+\frac{\sum_{j}\left(x_{p, j}-\bar{x}_{j}\right) r_{k, j}}{\sum_{j}\left|r_{k, j}\right|}
-$$
+$
 
 E-Mail $p$
 
@@ -218,7 +218,7 @@ A:
 
 Mittleres Rating von Rater Anton $A$.
 
-$${\widetilde{x}}_{A} = \frac{1}{n}\sum_{}^{}{}\, s_{A} = \frac{4 + 4 + 1 + 5 + 2}{5} = \frac{16}{5}$$
+${\widetilde{x}}_{A} = \frac{1}{n}\sum_{}^{}{}\, s_{A} = \frac{4 + 4 + 1 + 5 + 2}{5} = \frac{16}{5}$
 
 • Mit welchem Maß messen Sie die Abhängigkeit im Ratingverhalten zwischen zwei Benutzern? \(5 Punkte\)
 
@@ -226,7 +226,7 @@ A:
 
 Um die Abhängigkeit zwischen zwei Benutzern zu messen, kann der Pearson'sche Korrelationskoeffizient verwendet werden. Definiert als:
 
-$$r_{\text{kl}} = \frac{\text{cov}\left( s_{k},s_{l} \right)}{\sigma_{k}\sigma_{l}} = \frac{\sum_{i}^{}\mspace{2mu}\left( x_{i,k} - {\overline{x}}_{k} \right)\left( x_{i,l} - {\overline{x}}_{l} \right)}{\sqrt{\sum_{i}^{}\mspace{2mu}\left( x_{i,k} - {\overline{x}}_{k} \right)^{2}}\sqrt{\sum_{i}^{}\mspace{2mu}\left( x_{i,l} - {\overline{x}}_{l} \right)^{2}}}$$
+$r_{\text{kl}} = \frac{\text{cov}\left( s_{k},s_{l} \right)}{\sigma_{k}\sigma_{l}} = \frac{\sum_{i}^{}\left( x_{i,k} - {\overline{x}}_{k} \right)\left( x_{i,l} - {\overline{x}}_{l} \right)}{\sqrt{\sum_{i}^{}\left( x_{i,k} - {\overline{x}}_{k} \right)^{2}}\sqrt{\sum_{i}^{}\left( x_{i,l} - {\overline{x}}_{l} \right)^{2}}}$
 
 • Berechnen Sie die Abhängigkeit zwischen Anton und Dora sowie zwischen Anton und Emil! \(5 Punkte\)
 
@@ -234,23 +234,23 @@ A:
 
 Zunächst sind die Mittel der gemeinsamen Profile zu bestimmen:
 
-$${\overline{x}}_{D} = \frac{2 + 2 + 4 + 1 + 5}{5} = \frac{14}{5}$$
+${\overline{x}}_{D} = \frac{2 + 2 + 4 + 1 + 5}{5} = \frac{14}{5}$
 
-$${\overline{x}}_{E} = \frac{5 + 4 + 2 + 4}{4} = \frac{15}{4}$$
+${\overline{x}}_{E} = \frac{5 + 4 + 2 + 4}{4} = \frac{15}{4}$
 
 Woraus später der Korrelationskoeffizient bestimmt werden kann. Weiterhin sind die lokalen Mittelwerte für Anton notwendig. Diese sind:
 
-$${\overline{x}}_{A} = \frac{4 + 4 + 1 + 5 + 2}{5} = \frac{16}{5}$$
+${\overline{x}}_{A} = \frac{4 + 4 + 1 + 5 + 2}{5} = \frac{16}{5}$
 
 Und
 
-$${\overline{x}}_{A} = \frac{4 + 4 + 1 + \, 5}{4} = \frac{7}{2}$$
+${\overline{x}}_{A} = \frac{4 + 4 + 1 + \, 5}{4} = \frac{7}{2}$
 
 Mit dem Korrelationskoeffizient folgt:
 
-$\begin{matrix} r\_{A,D}\& = \frac{2\left\( 4 - \frac{16}{5} \right\)\left\( 2 - \frac{14}{5} \right\) + \left\( 1 - \frac{16}{5} \right\)\left\( 4 - \frac{14}{5} \right\) + \left\( 5 - \frac{16}{5} \right\)\left\( 1 - \frac{14}{5} \right\) + \left\( 2 - \frac{16}{5} \right\)\left\( 5 - \frac{14}{5} \right\)}{\sqrt{2\left\( 4 - \frac{16}{5} \right\)^{2} + \left\( 1 - \frac{16}{5} \right\)^{2} + \left\( 5 - \frac{16}{5} \right\)^{2} + \left\( 2 - \frac{16}{5} \right\)^{2}}\sqrt{2\left\( 2 - \frac{14}{5} \right\)^{2} + \left\( 4 - \frac{14}{5} \right\)^{2} + \left\( 1 - \frac{14}{5} \right\)^{2} + \left\( 5 - \frac{14}{5} \right\)^{2}}} \ \& = - \frac{49}{54} =  -  0.9074, \ \end{matrix}$
+$\begin{matrix} r_{A,D} = \frac{2(4 - \frac{16}{5})(2 - \frac{14}{5}) + (1 - \frac{16}{5})(4 - \frac{14}{5}) + (5 - \frac{16}{5})(1 - \frac{14}{5}) + (2 - \frac{16}{5})(5 - \frac{14}{5})}{\sqrt{2(4 - \frac{16}{5})^{2} + (1 - \frac{16}{5})^{2} + (5 - \frac{16}{5})^{2} + (2 - \frac{16}{5})^{2}}\sqrt{2(2 - \frac{14}{5})^{2} + (4 - \frac{14}{5})^{2} + (1 - \frac{14}{5})^{2} + (5 - \frac{14}{5})^{2}}} = - \frac{49}{54} = -0.9074 \end{matrix}$
 
-$\begin{matrix} r\_{A,E}\& = \frac{\left\( 4 - \frac{7}{2} \right\)\left\( 5 - \frac{15}{4} \right\) + \left\( 4 - \frac{7}{2} \right\)\left\( 4 - \frac{15}{4} \right\) + \left\( 1 - \frac{7}{2} \right\)\left\( 2 - \frac{15}{4} \right\) + \left\( 5 - \frac{7}{2} \right\)\left\( 4 - \frac{15}{4} \right\)}{\sqrt{\left\( 4 - \frac{7}{2} \right\)^{2} +  \left\( 4 - \frac{7}{2} \right\)^{2} + \left\( 1 - \frac{7}{2} \right\)^{2} + \left\( 5 - \frac{7}{2} \right\)^{2}}\sqrt{\(5 - \frac{15}{4}\)^{2} + \(4 - \frac{15}{4}\)^{2} + \(2 - \frac{15}{4}\)^{2} + \(4 - \frac{15}{4}\)^{2}}} \ \& = \frac{11\sqrt{19}}{57} =  0.8412 \ \end{matrix}$
+$\begin{matrix} r_{A,E} = \frac{(4 - \frac{7}{2})(5 - \frac{15}{4}) + (4 - \frac{7}{2})(4 - \frac{15}{4}) + (1 - \frac{7}{2})(2 - \frac{15}{4}) + (5 - \frac{7}{2})(4 - \frac{15}{4})}{\sqrt{(4 - \frac{7}{2})^{2} + (4 - \frac{7}{2})^{2} + (1 - \frac{7}{2})^{2} + (5 - \frac{7}{2})^{2}}\sqrt{(5 - \frac{15}{4})^{2} + (4 - \frac{15}{4})^{2} + (2 - \frac{15}{4})^{2} + (4 - \frac{15}{4})^{2}}} = \frac{11\sqrt{19}}{57} = 0.8412 \end{matrix}$
 
 • Wie interpretieren Sie diese Abhängigkeit? \(5 Punkte\)
 
@@ -274,7 +274,7 @@ A:
 
 Die allgemeine Formel für das mittlere Rating von Rater k lautet wie folgt:
 
-$${\widetilde{x}}_{L} = \frac{1}{n}\sum_{}^{}{}\, s_{L} = \frac{4 + 4 + 1 + 5 + 2}{5} = \frac{16}{5}$$
+${\widetilde{x}}_{L} = \frac{1}{n}\sum_{}^{}{}\, s_{L} = \frac{4 + 4 + 1 + 5 + 2}{5} = \frac{16}{5}$
 
 2. Mit welchem Maß messen Sie die Abhängigkeit im Rating verhalten zwischen zwei Benutzern? \(5 Punkte\)
 
@@ -282,9 +282,9 @@ A:
 
 Um die Abhängigkeit zwischen zwei Benutzern zu messen, kann der Pearson'sche Korrelationskoeffizient verwendet werden.
 
-$$
+$
 r_{k l}=\frac{\operatorname{cov}\left(s_{k}, s_{l}\right)}{\sigma_{k} \sigma_{l}}=\frac{\sum_{i}\left(x_{i, k}-\bar{x}_{k}\right)\left(x_{i, l}-\bar{x}_{l}\right)}{\sqrt{\sum_{i}\left(x_{i, k}-\bar{x}_{k}\right)^{2}} \sqrt{\sum_{i}\left(x_{i, l}-\bar{x}_{l}\right)^{2}}}
-$$
+$
 
 3. Berechnen Sie die Abhängigkeit zwischen Lina und Felix sowie zwischen Lina und Johannes \(5 Punkte\)
 

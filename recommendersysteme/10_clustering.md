@@ -9,11 +9,11 @@ A:
   * Anzahl der zu bildenden Cluster muss nicht a priori festgelegt
 
     werden.
-* Vorteile $$k$$-means
-  * $$k$$-means konvergiert typischerweise sehr schnell.
+* Vorteile k-means
+  * k-means konvergiert typischerweise sehr schnell.
   * Konzeptionell einfach.
-* Nachteil $$k$$-means
-  * Anzahl Cluster $$k$$ ist exogener Parameter → erfordert Kenntnis
+* Nachteil k-means
+  * Anzahl Cluster k ist exogener Parameter → erfordert Kenntnis
 
     über Datenbestand
 
@@ -33,7 +33,7 @@ _Welcher Clusteralgorithmus empfiehlt sich, um Ihren Nutzern Expertenstati zuzuo
 
 A:
 
-* Die Anzahl der Cluster ist vorab bekannt mit 3 möglichen Ausprägungen. Aus diesem Grund sollte der iterative $$k$$-means-Algorithmus verwendet werden.
+* Die Anzahl der Cluster ist vorab bekannt mit 3 möglichen Ausprägungen. Aus diesem Grund sollte der iterative $k$-means-Algorithmus verwendet werden.
 * Zum Clustering benötigt man Daten über die Nutzer. Diese könnten etwa die Anzahl bereits gelesener Dokumente, akademischer Grad, Selbsteinschätzung Vorkenntnisse o. Ä. sein.
 * Zur Nutzung im Recommendersystem reicht dann das Wissen, in welchem Cluster sich ein Nutzer befindet, aus. Hierfür muss aber ein Mapping bestehen, um zu interpretieren, welches Cluster den „Experten" o. Ä. entspricht.
 
@@ -56,8 +56,8 @@ Typischerweise wird der gesamte vorhandene Datenbestand in ein Trainingsset und 
 
 Eine Variante ist **k-fold cross validation** mit folgendem Vorgehen:
 
-* Partitioniere das Datenset in $$k$$ Partitionen
-* Schätze $$k$$ hold-out Prädikator mit 1 Partition Validation Set und $$k - 1$$ Partitionen als Trainingsset, dann zweiter Durchlauf mit zweiter Partition zur Validierung und übrigen Partitionen zum Training. Analog wiederholen bis zum $$k$$-ten Durchlauf.
+* Partitioniere das Datenset in $k$ Partitionen
+* Schätze $k$ hold-out Prädikator mit 1 Partition Validation Set und $k - 1$ Partitionen als Trainingsset, dann zweiter Durchlauf mit zweiter Partition zur Validierung und übrigen Partitionen zum Training. Analog wiederholen bis zum $k$-ten Durchlauf.
 
 **Performance am Testdatensatz feststellen:**
 
@@ -109,15 +109,15 @@ A:
 
 **Normalisiertes, inneres Produkt:**
 
-$$
+$
 s\left( x_{1},x_{2} \right) = \frac{x_{1} \cdot x_{2}}{\left. \  \parallel x_{1} \right.\  \parallel \left. \  \parallel x_{2} \right.\  \parallel}
-$$
+$
 
 **Anteil der gemeinsamen Attribute:**
 
-$$
+$
 s\left(x_{1}, x_{2}\right)=\frac{x_{1}^{T} x_{2}}{d}
-$$
+$
 
 F: _Nennen Sie einen Anwendungsfall, wie Clusteranalyse in einem Recommenderdienst verwendet werden kann._
 
@@ -127,7 +127,7 @@ A:
 
 Use Case: Sie arbeiten für Jupiter, einen großen, deutschlandweit operierenden Elektronikanbieter, der sein Online Geschäft ausbauen möchte. Sie sollen für die Abteilung Haushaltsgeräte einen Recommenderdienst für Kühlschränke aufbauen: Ähnliche Kühlschränke sollen auf der jeweiligen Produktseite einander gegenüber gestellt werden, damit der Kunde diese besser vergleichen kann. Sie entscheiden sich deshalb für einen inhaltsbasierten Recommender auf Basis von Clusterverfahren. Ohne Use Case Bezug max. die Hälfte der Punkte!
 
-F: _Definieren Sie als erstes den “Feature Space” für Kühlschränke, in dem Sie jeden Kühlschrank mit einem Vektor_ $$x_{i}$$ _beschreiben, also Kühlschrank 1 mit_ $$x_{1}$$_, Kühlschrank 2 mit_ $$x_{2}$$ _usw._ $$x_{i}$$ _ist dabei selbst ein k-dimensionaler Vektor mit_ $$k$$ _Eigenschaften des Kühlschranks. Geben Sie ein konkretes Beispiel mit 5 Dimensionen, wie ein_ $$x_{i}$$ _aussehen könnte und überlegen Sie sich, welche Eigenschaften Sie im Use Case abbilden wollen._
+F: _Definieren Sie als erstes den “Feature Space” für Kühlschränke, in dem Sie jeden Kühlschrank mit einem Vektor_ $x_{i}$ _beschreiben, also Kühlschrank 1 mit_ $x_{1}$_, Kühlschrank 2 mit_ $x_{2}$ _usw._ $x_{i}$ _ist dabei selbst ein k-dimensionaler Vektor mit_ $k$ _Eigenschaften des Kühlschranks. Geben Sie ein konkretes Beispiel mit 5 Dimensionen, wie ein_ $x_{i}$ _aussehen könnte und überlegen Sie sich, welche Eigenschaften Sie im Use Case abbilden wollen._
 
 A:
 
@@ -148,11 +148,11 @@ Binäre / Nominale Attribute werden konvertiert in Abstand
 | Einbaugerät | Ja | Nein | 1 | 0 |
 | Eiswürfeleinheit | Ja | Nein | 1 | 0 |
 
-$$
+$
 S=\left(\left(\begin{array}{c} 0 \\ 0.7 \\ 0.8 \\ 1 \\ 1\end{array}\right),\left(\begin{array}{c}0.6 \\ 0.2 \\ 0 \\ 0 \\ 0\end{array}\right)\right)
-$$
+$
 
-F: _Sie stellen einen Werkstudenten ein, der alle bei Jupiter gelisteten Kühlschränke mit den_ $$k$$ _Dimensionen erfasst. Sie erhalten als Ergebnis_ $$n$$ __$$k$$_-dimensionale Vektoren_ $$x_1, x_2, \ldots, x_n$$_. Beschreiben Sie kurz 3 Praxis-Probleme, auf die der Werkstudent Ihrer Erwartung nach bei der Aufbereitung der Daten stoßen wird._
+F: _Sie stellen einen Werkstudenten ein, der alle bei Jupiter gelisteten Kühlschränke mit den_ $k$ _Dimensionen erfasst. Sie erhalten als Ergebnis_ $n$ __$k$_-dimensionale Vektoren_ $x_1, x_2, \ldots, x_n$_. Beschreiben Sie kurz 3 Praxis-Probleme, auf die der Werkstudent Ihrer Erwartung nach bei der Aufbereitung der Daten stoßen wird._
 
 A:
 
@@ -162,55 +162,55 @@ A:
 4. **Redundante Daten** z. B. können Kühlschränken in mehreren Farben angeboten wären. Mit Ausnahme der Farbe hätten diese Kühlschränke eine ähnliche Position im Raum, würden dann wegen der hohen Ähnlichkeit empfohlen werden. Eigentlich handelt es sich aber um eine „schlechte / triviale Empfehlung".
 5. **Erfassungsfehler** z. B. kann Werkstudent Fehler bei Datenerfassung machen, was zu fehlerhaften Empfehlungen führt.
 
-F: _Sie möchten nun die_ $$n$$ _Kühlschränke in_ $$c$$ _Partitionen trennen._ $$M_{1},\, m_{2},\,\ldots,\, m_{c}$$ _seien die c Clustermittelpunkte der Partitionen_ $$D_{1},\, D_{2},\,\ldots,\, D_{c}$$_. Welches Kriterium \(exakt: Zielfunktion\) setzen Sie an? Geben Sie die Formel mit der hier verwendeten Notation an und erklären Sie alle Bestandteile!_
+F: _Sie möchten nun die_ $n$ _Kühlschränke in_ $c$ _Partitionen trennen._ $M_{1},\, m_{2},\,\ldots,\, m_{c}$ _seien die c Clustermittelpunkte der Partitionen_ $D_{1},\, D_{2},\,\ldots,\, D_{c}$_. Welches Kriterium \(exakt: Zielfunktion\) setzen Sie an? Geben Sie die Formel mit der hier verwendeten Notation an und erklären Sie alle Bestandteile!_
 
 A:
 
 Man minimiert die Summe der Varianzen. Die _Criterion Function_ ist definiert als:
 
-$$
+$
 J = \sum_{i = 1}^{c}\sum_{x_{j} \in D_{i}}\left. \  \parallel x_{j} - m_{i} \right.\  \parallel^{2},
-$$
+$
 
-wobei $$m_{i}$$, der Mittelwert der Partition $$D_{i}$$, definiert ist als:
+wobei $m_{i}$, der Mittelwert der Partition $D_{i}$, definiert ist als:
 
-$$
+$
 m_{i} = \frac{1}{n_{i}}\sum_{x_{j} \in D_{i}} x_{j}.
-$$
+$
 
 Man iteriert also über jeden Punkt im Cluster und berechnet die Distanz zu zum Cluster-Mittelpunkt und wiederholt das Vorgehen für jedes Cluster. Das Ergebnis wird aufsummiert. Oberhalb wird die quadrierte Norm verwendet. Liegt ein Punkt im falschen Cluster wird die Summe entsprechend groß. \(Geyer-Schulz 2017 S. 25\)
 
-**Problem:** Man versucht eigentlich $$J$$ zu minieren \(minimales Varianz-Kriterium\). Hat man genauso viele Cluster wie Datenpunkte, dann ist $$J = 0$$ wenig aussagekräftig \(Geyer-Schulz 2017 S. 29\)
+**Problem:** Man versucht eigentlich $J$ zu minieren \(minimales Varianz-Kriterium\). Hat man genauso viele Cluster wie Datenpunkte, dann ist $J = 0$ wenig aussagekräftig \(Geyer-Schulz 2017 S. 29\)
 
-F: _Wie heißt der Fachausdruck für den “Abstand” zwischen zwei Datenpunkten_ $$x_{a}$$ _und_ $$x_{b}$$_? Schlagen Sie eine geeignete konkrete \(!\) Metrik für Ihren Feature Space \(aus Teil 1!\) vor._ $$x_{i,k}$$ _notiere dabei die Merkmalsausprägung_ $$k$$ _des Kühlschranks_ $$i$$_._
+F: _Wie heißt der Fachausdruck für den “Abstand” zwischen zwei Datenpunkten_ $x_{a}$ _und_ $x_{b}$_? Schlagen Sie eine geeignete konkrete \(!\) Metrik für Ihren Feature Space \(aus Teil 1!\) vor._ $x_{i,k}$ _notiere dabei die Merkmalsausprägung_ $k$ _des Kühlschranks_ $i$_._
 
 A:
 
 1. Der Fachbegriff ist Ähnlichkeitsmaß. \(euklidischer Abstand\)
-2. Verhältnis der gemeinsamen Attribute zur Anzahl der Attribute in $$x_{1}$$ oder $$x_{2}$$ „Tanimoto"-Distanz:
+2. Verhältnis der gemeinsamen Attribute zur Anzahl der Attribute in $x_{1}$ oder $x_{2}$ „Tanimoto"-Distanz:
 
-$$
+$
 s\left( x_{1},x_{2} \right) = \frac{x_{1}^{T}x_{2}}{x_{1}^{T}x_{1} + x_{2}^{T}x_{2} - x_{1}^{T}x_{2}}
-$$
+$
 
 F: _Nach welchem Kriterium wählt der Algorithmus “iterative k-means” die optimale Anzahl der Cluster aus? Wie bestimmt man allgemein die optimale Anzahl der Cluster?_
 
 A:
 
-Die Anzahl der Cluster ist ein exogener Parameter beim $$k$$-means-Algorithmus. Muss also durch den Nutzer vorgegeben werden.
+Die Anzahl der Cluster ist ein exogener Parameter beim $k$-means-Algorithmus. Muss also durch den Nutzer vorgegeben werden.
 
-Ansätze, um das optimale $$k$$ zu finden:
+Ansätze, um das optimale $k$ zu finden:
 
-$$H_{0}$$: es sind $$c$$ Cluster, da $$(J(c))$$  
-$$H_{1}$$: es sind $$c+1$$ Cluster, da $$(J(c+1))$$.
+$H_{0}$: es sind $c$ Cluster, da $(J(c))$  
+$H_{1}$: es sind $c+1$ Cluster, da $(J(c+1))$.
 
-$$
+$
 J(c)-J(c+1) \leq \varepsilon \text { und } P\left(H_{1} \text{wahr} \mid J(c)-J(c+1) \leq \varepsilon\right) \leq \theta,
-$$
+$
 
-Wir akzeptieren $$H_{0}$$, wenn:
+Wir akzeptieren $H_{0}$, wenn:
 
-… wenn also Wahrscheinlichkeit, dass $$H_{1}$$ trotz dieser “geringen” Abnahme von $$J(c+1)$$ verglichen mit $$J(c)$$ stimmt, akzeptabel klein ist. \(Geyer-Schulz 2017 S. 29\)
+… wenn also Wahrscheinlichkeit, dass $H_{1}$ trotz dieser “geringen” Abnahme von $J(c+1)$ verglichen mit $J(c)$ stimmt, akzeptabel klein ist. \(Geyer-Schulz 2017 S. 29\)
 
 ## Quellen
 

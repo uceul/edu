@@ -23,7 +23,7 @@ A:
 
 * Gamma-Verteilung \(betrifft Parameter µ\)
 * Käufe von allen Kunden in Perioden folgen Poisson-Verteilung: $p\_{r} = \frac{e^{- \mu}\mu^{r}}{r!}$
-* Logarithmische Reihenverteilung \(betrifft Kaufprozesse der Konsumenten $c_{1},\, c_{2},\ldots,c\_{n}$. $P\left\( r\mathrm{ }\mathrm{Kä}\text{ufe} \right\) = \frac{- q^{r}}{\text{rln}\left\( 1 - q \right\)},r \geq 1$
+* Logarithmische Reihenverteilung \(betrifft Kaufprozesse der Konsumenten $c_{1},\, c_{2},\ldots,c_{n}$. $P( r\mathrm{ }\mathrm{Kä}\text{ufe} ) = \frac{- q^{r}}{\text{rln}( 1 - q )},r \geq 1$
 
 **Vorgehen**
 
@@ -40,12 +40,12 @@ Welche Varianten gibt es, um zu bestimmen, ab wann eine Anzahl gemeinsamer Käuf
 
 A:
 
-1. Sobald die Anzahl Ausreißer unter kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f\left\( x_{\mathrm{\text{beobachtet }}} \right\) &lt; \left\( 1 - F\left\( x_{\mathrm{\text{theoretisch }}} \right\) \right\)$
-2. Sobald die Anzahl Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f\left\( x_{\mathrm{\text{beobachtet }}} \right\) &lt; f\left\( x_{\mathrm{\text{theoretisch }}} \right\)$
-3. Sobald kumulierte Anzahl Ausreißer unter kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt: $\left\( 1 - F\left\( x_{\mathrm{\text{beobachtet }}} \right\) \right\) &lt; \left\( 1 - F\left\( x_{\mathrm{\text{theoretisch }}} \right\) \right\)$
+1. Sobald die Anzahl Ausreißer unter kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f(x_{\mathrm{\text{beobachtet}}}) < (1 - F(x_{\mathrm{\text{theoretisch}}}))$
+2. Sobald die Anzahl Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f(x_{\mathrm{\text{beobachtet}}}) < f(x_{\mathrm{\text{theoretisch}}})$
+3. Sobald kumulierte Anzahl Ausreißer unter kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt: $(1 - F(x_{\mathrm{\text{beobachtet}}})) < (1 - F(x_{\mathrm{\text{theoretisch}}}))$
 4. Wenn der Anteil der \(zufällig\) nach dem LSD-Modell erwarteten Produkte im Verhältnis zu beobachteten gering ist.
-   * Bestimmen $\frac{f\left\( x_{\mathrm{\text{theoretisch }}} \right\)}{f\left\( x_{\mathrm{\text{beobachtet }}} \right\)}$ für jede Klasse $r$.
-   * Produkte aller Klassen, deren Verhältnis unter einer bestimmten Schranke $\theta\left\( 0 &lt; \theta &lt; 1 \right\)$ liegt, werden empfohlen.
+   * Bestimmen $\frac{f( x_{\mathrm{\text{theoretisch }}} )}{f( x_{\mathrm{\text{beobachtet }}} )}$ für jede Klasse $r$.
+   * Produkte aller Klassen, deren Verhältnis unter einer bestimmten Schranke $\theta( 0 < \theta < 1 )$ liegt, werden empfohlen.
 
 Die passendste Variante könnte durch **Experteneinschätzung** bestimmt werden.
 
@@ -87,13 +87,13 @@ A:
 
 Regel A \(weniger als 40 %\) Zufallsbeobachtung:
 
-Repeat-buys $$f\left( x \right)\text{ob}$$ $f\left\( x \right\)\text{theo}$ $$\frac{f\left( x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}} \right)}{f\left( x_{\mathrm{\text{ob}}\mathrm{\,}} \right)}$$ Klasse wird gezeigt
+Repeat-buys $f(x)\text{ob}$ $f(x)\text{theo}$ $\frac{f(x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}})}{f(x_{\mathrm{\text{ob}}\mathrm{\,}})}$ Klasse wird gezeigt Klasse wird gezeigt
 
 1 87 83.565 0.961 0 2 17 21.355 1.256 0 3 2 7.276 3.638 0 4 5 2.789 0.558 0 5 3 1.140 0.380 1 6 1 0.486 0.486 0 7 1 0.213 0.213 1 8 1 0.095 0.095 1
 
 Regel B:
 
-Repeat-buys $$f\left( x \right)\text{ob}$$ $f\left\( x \right\)\text{theo}$ $$f\left( x_{\mathrm{\text{ob}}\mathrm{\,}} \right) < f\left( x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}} \right)$$ Klasse wird gezeigt
+Repeat-buys $f(x)\text{ob}$ $f(x)\text{theo}$ $f(x_{\mathrm{\text{ob}}\mathrm{\,}}) < f(x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}})$ Klasse wird gezeigt Klasse wird gezeigt
 
 1 87 83.565 Falsch 0 2 17 21.355 Wahr 0 3 2 7.276 Wahr 0 4 5 2.789 Falsch 1 5 3 1.140 Falsch 1 6 1 0.486 Falsch 1 7 1 0.213 Falsch 1 8 1 0.095 Falsch 1
 
@@ -132,7 +132,7 @@ Was bestimmt der LSD-Verteilungsparameter q in der untenstehenden Tabelle? \(3P.
 
 $f\_{\text{theo}}$ in untenstehender Tabelle ist abgleitet aus LSD-Modell, dass die Wahrscheinlichkeit in Abhängigkeit von den Parametern $\text{q }$und $r$ angibt:
 
-$$P(rK\ddot{a}ufe) = \frac{- q^{r}}{r\ln(1 - q)},r \geq 1$$
+$P(rK\ddot{a}ufe) = \frac{- q^{r}}{r\ln(1 - q)},r \geq 1$
 
 Um also $f\_{\text{theo}}$ in der Tabelle und damit die theoretische Verteilung der Wiederkäufe zu bestimmen, wird der Parameter q benötigt. q gibt den Anteil der Repeat-Buyer an gesamten Käufen an \(vgl. Folie 29, Ehrenberg\)
 
@@ -152,9 +152,9 @@ Stellen Sie drei verschiedene Abschneideregeln als Formeln da. \(9P.\)
 
 A:
 
-* Sobald die Anzahl Ausreißer unter kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f\left\( x_{\mathrm{\text{beobachtet }}} \right\) &lt; \left\( 1 - F\left\( x_{\mathrm{\text{theoretisch }}} \right\) \right\)$
-* Sobald die Anzahl Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f\left\( x_{\mathrm{\text{beobachtet }}} \right\) &lt; f\left\( x_{\mathrm{\text{theoretisch }}} \right\)$
-* Sobald kumulierte Anzahl Ausreißer unter kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt: $\left\( 1 - F\left\( x_{\mathrm{\text{beobachtet }}} \right\) \right\) &lt; \left\( 1 - F\left\( x_{\mathrm{\text{theoretisch }}} \right\) \right\)$
+* Sobald die Anzahl Ausreißer unter kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f(x_{\mathrm{\text{beobachtet}}}) < (1 - F(x_{\mathrm{\text{theoretisch}}}))$
+* Sobald die Anzahl Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f(x_{\mathrm{\text{beobachtet}}}) < f(x_{\mathrm{\text{theoretisch}}})$
+* Sobald kumulierte Anzahl Ausreißer unter kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt: $(1 - F(x_{\mathrm{\text{beobachtet}}})) < (1 - F(x_{\mathrm{\text{theoretisch}}}))$
 
 Wenden Sie diese Abschneideregeln auf den untenstehenden Beispieldatensatz an: Markieren Sie in den Spalten R1 . . . R3, welche Zeilen Sie empfehlen. \(Ohne zumindest kurzen Rechenweg keine Punkte!\) \(6P.\)
 
@@ -164,19 +164,19 @@ Wenden Sie diese Abschneideregeln auf den untenstehenden Beispieldatensatz an: M
 
 Regel A \(weniger als 40 %\) Zufallsbeobachtung:
 
-Repeat-buys $$f\left( x \right)\text{ob}$$ $f\left\( x \right\)\text{theo}$ $$\frac{f\left( x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}} \right)}{f\left( x_{\mathrm{\text{ob}}\mathrm{\,}} \right)}$$ Klasse wird gezeigt
+Repeat-buys $f(x)\text{ob}$ $f(x)\text{theo}$ $\frac{f(x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}})}{f(x_{\mathrm{\text{ob}}\mathrm{\,}})}$ Klasse wird gezeigt
 
 1 87 83.5 0,96 0 2 17 21.5 1,26 0 3 2 7.3 3,65 0 4 4 2.8 0,70 0 5 3 1.0 0,33 1 6 1 0.5 0,50 0 7 1 0.2 0,20 1 8 1 0.1 0,10 1
 
 Regel B:
 
-Repeat-buys $$f\left( x \right)\text{ob}$$ $f\left\( x \right\)\text{theo}$ $$f\left( x_{\mathrm{\text{ob}}\mathrm{\,}} \right) < f\left( x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}} \right)$$ Klasse wird gezeigt
+Repeat-buys $f(x)\text{ob}$ $f(x)\text{theo}$ $f(x_{\mathrm{\text{ob}}\mathrm{\,}}) < f(x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}})$ Klasse wird gezeigt Klasse wird gezeigt
 
 1 87 83.5 FALSCH 0 2 17 21.5 WAHR 0 3 2 7.3 WAHR 0 4 4 2.8 FALSCH 1 5 3 1.0 FALSCH 1 6 1 0.5 FALSCH 1 7 1 0.2 FALSCH 1 8 1 0.1 FALSCH 1
 
 Regel C:
 
-Repeat-buys $$F\left( x \right)\text{ob}$$ $F\left\( x \right\)\text{theo}$ $116 -  F\left\( x \right\)\text{ob}$ $116,9 -  F\left\( x \right\)\text{theo}$ $$1 - F\left( x_{\mathrm{\text{obs}}\mathrm{\,}} \right) < 1 - F\left( x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}} \right)$$ Klasse wird gezeigt
+Repeat-buys $F(x)\text{ob}$ $F(x)\text{theo}$ $116 - F(x)\text{ob}$ $116,9 - F(x)\text{theo}$ $1 - F(x_{\mathrm{\text{obs}}\mathrm{\,}}) < 1 - F(x_{\mathrm{t}\mathrm{h}\mathrm{\text{eo}}\mathrm{\,}})$ Klasse wird gezeigtKlasse wird gezeigt
 
 1 87 0,71 29 33,4 WAHR 0 2 104 105 12 11,9 FALSCH 1 3 106 112,3 10 4,6 FALSCH 1 4 110 115,1 6 1,8 FALSCH 1 5 113 116,1 3 0,8 FALSCH 1 6 114 116,6 2 0,3 FALSCH 1 7 115 116,8 1 0,1 FALSCH 1 8 116 116,9 0 0 FALSCH 1
 
@@ -211,7 +211,7 @@ Der Ehrenberg-Recommender-Algorithmus ermittelt für ein festes Produkt die Kauf
 
 A:
 
-$$\mathrm{\text{Mean}}\mathrm{\,}\mathrm{\text{purchase}}\mathrm{\,}\mathrm{\text{frequency}}\mathrm{\,}w = \frac{- q}{\left( 1 - q \right)\ln\left( 1 - q \right)}$$
+$\mathrm{\text{Mean}}\mathrm{\,}\mathrm{\text{purchase}}\mathrm{\,}\mathrm{\text{frequency}}\mathrm{\,}w = \frac{- q}{\left( 1 - q \right)\ln\left( 1 - q \right)}$
 
 D. h. anhand von Mittelwert m und Penetration $b$ wird erstmal die mean purchase frequency $w$ berechnet, daraus lässt sich dann $q$ anhand von Tabellen ablesen.
 
@@ -229,7 +229,7 @@ A:
 
 Kennt man w, so kann man q ableiten / via Bisektionsverfahren:
 
-$$\mathrm{\text{Mean}}\mathrm{\,}\mathrm{\text{purchase}}\mathrm{\,}\mathrm{\text{frequency}}\mathrm{\,}w = \frac{- q}{\left( 1 - q \right)\ln\left( 1 - q \right)}$$
+$\mathrm{\text{Mean}}\mathrm{\,}\mathrm{\text{purchase}}\mathrm{\,}\mathrm{\text{frequency}}\mathrm{\,}w = \frac{- q}{\left( 1 - q \right)\ln\left( 1 - q \right)}$
 
 Alternativ liegt q auch in tabellierter Form vor z. B.:
 
@@ -269,19 +269,19 @@ A:
 
 ![](../.gitbook/assets/grafik%20%289%29.png)
 
-Sobald Anzahl der Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f\left\( x_{\mathrm{\text{beobachtet }}} \right\) &lt; f\left\( x_{\mathrm{\text{theoretisch }}} \right\)$, wird keine Empfehlung gegeben.
+Sobald Anzahl der Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f( x_{\mathrm{\text{beobachtet }}} ) < f( x_{\mathrm{\text{theoretisch }}} )$, wird keine Empfehlung gegeben.
 
 Usecase: wird für die Paare Schoko-Ostertiere mit Backware oder Wurstware mit veganem Brotaufstrich, die theoretische Anzahl der Wiederkäufe nicht erreicht. Theoretisch hätten 5 Paare 3-mal zusammengekauft werden sollen, praktisch aber nur 4 Paare 3-Mal. Es wird also **keine** Empfehlung gegeben.
 
 \(b\) Geben Sie diese auch mathematisch an. \(2P.\)
 
-A: Sobald Anzahl der Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f\left\( x_{\mathrm{\text{beobachtet }}} \right\) &lt; f\left\( x_{\mathrm{\text{theoretisch }}} \right\)$, wird keine Empfehlung gegeben.
+A: Sobald Anzahl der Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f( x_{\mathrm{\text{beobachtet }}} ) < f( x_{\mathrm{\text{theoretisch }}} )$, wird keine Empfehlung gegeben.
 
 \(c\) Geben Sie eine weitere Abschneideregel mathematisch an und erklären Sie diese, Sie müssen nicht zeichnen! \(2+2=4P.\)
 
 A: Sobald die Anzahl der Ausreißer unter die kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt, wird keine Empfehlung mehr gegeben:
 
-$$f\left( x_{\mathrm{\text{beobachtet}}} \right) < \left( 1 - F\left( x_{\mathrm{\text{theoretisch }}} \right) \right)$$
+$f\left( x_{\mathrm{\text{beobachtet}}} \right) < \left( 1 - F\left( x_{\mathrm{\text{theoretisch }}} \right) \right)$
 
 Use Case: Sie arbeiten für Jupiter, einen großen, deutschlandweit operierenden Elektronikanbieter, der sein Onlinegeschäft ausbauen möchte. Sie sollen für die Abteilung Haushaltsgeräte einen Ehrenberg-Recommenderdienst aufbauen: Zusatzartikel, die beim Kauf eines Kühlschrankes oft dazu erworben wurden, sollen künftig auf der Produktseite empfohlen werden. Ohne Use Case Bezug max. die Hälfte der Punkte!
 
@@ -320,13 +320,13 @@ A:
 
 \(b\) Geben Sie diese auch mathematisch an. \(1P.\)
 
-A: Sobald Anzahl der Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f\left\( x_{\mathrm{\text{beobachtet }}} \right\) &lt; f\left\( x_{\mathrm{\text{theoretisch }}} \right\)$, wird keine Empfehlung gegeben.
+A: Sobald Anzahl der Ausreißer unter Anzahl von theoretisch erwarteten Wiederkäufen fällt: $f( x_{\mathrm{\text{beobachtet }}}) < f( x_{\mathrm{\text{theoretisch }}})$, wird keine Empfehlung gegeben.
 
 \(c\) Geben Sie eine weitere Abschneideregel mathematisch an und erklären Sie diese, Sie müssen nicht zeichnen! \(2+2=4P.\)
 
 A: Sobald die Anzahl der Ausreißer für Kühlschrankmagneten unter die kumulierte Anzahl von theoretisch erwarteten Wiederkäufen fällt, wird keine Empfehlung mehr gegeben:
 
-$$f\left( x_{\mathrm{\text{beobachtet}}} \right) < \left( 1 - F\left( x_{\mathrm{\text{theoretisch }}} \right) \right)$$
+$f\left( x_{\mathrm{\text{beobachtet}}} \right) < \left( 1 - F\left( x_{\mathrm{\text{theoretisch }}} \right) \right)$
 
 \(d\) Für den Use Case: Würden Sie eher eine klassischen AR-Recommender oder einen Ehrenberg-Recommender einsetzen? Begründen Sie! \(3P.\)
 
