@@ -226,7 +226,7 @@ A:
 
 Um die Abhängigkeit zwischen zwei Benutzern zu messen, kann der Pearson'sche Korrelationskoeffizient verwendet werden. Definiert als:
 
-$r_{\text{kl}} = \frac{\text{cov}\left( s_{k},s_{l} \right)}{\sigma_{k}\sigma_{l}} = \frac{\sum_{i}^{}\left( x_{i,k} - {\overline{x}}_{k} \right)\left( x_{i,l} - {\overline{x}}_{l} \right)}{\sqrt{\sum_{i}^{}\left( x_{i,k} - {\overline{x}}_{k} \right)^{2}}\sqrt{\sum_{i}^{}\left( x_{i,l} - {\overline{x}}_{l} \right)^{2}}}$
+$$r_{\text{kl}} = \frac{\text{cov}\left( s_{k},s_{l} \right)}{\sigma_{k}\sigma_{l}} = \frac{\sum_{i}^{}\left( x_{i,k} - {\overline{x}}_{k} \right)\left( x_{i,l} - {\overline{x}}_{l} \right)}{\sqrt{\sum_{i}^{}\left( x_{i,k} - {\overline{x}}_{k} \right)^{2}}\sqrt{\sum_{i}^{}\left( x_{i,l} - {\overline{x}}_{l} \right)^{2}}}$$
 
 • Berechnen Sie die Abhängigkeit zwischen Anton und Dora sowie zwischen Anton und Emil! \(5 Punkte\)
 
